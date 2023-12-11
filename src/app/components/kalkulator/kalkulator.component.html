@@ -1,0 +1,20 @@
+<h1>{{ title }}</h1>
+<p>kalkulator works!</p>
+
+<!-- <input [(ngModel)]="num1" type="number" />
+<input [(ngModel)]="num2" type="number" /> -->
+
+<!-- <button type="button" (click)="tambah()">Tambah!!!</button>
+    <button type="button" (click)="kurang()">Kurang!!!</button>
+    <button type="button" (click)="kali()">kali!!!</button>
+    <button type="button" (click)="bagi()">bagi!!!</button> -->
+
+<input #num1 type="number" name="num1" />
+<input #num2 type="number" name="num2" />
+
+<button type="button" (click)="tambah(num1.value, num2.value)">tambah!</button>
+<button type="button" (click)="kurang(num1.value, num2.value)">kurang!</button>
+<button type="button" (click)="kali(num1.value, num2.value)">kali!</button>
+<button type="button" (click)="bagi(num1.value, num2.value)">bagi!</button>
+
+<h1>{{ result }}</h1>
