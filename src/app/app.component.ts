@@ -15,6 +15,7 @@ import { ChildComponent } from './components/child/child.component';
     CounterComponent,
     HomeComponent,
     CommonModule,
+    ChildComponent,
     RouterOutlet,
     ParentComponent,
   ],

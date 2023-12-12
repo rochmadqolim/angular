@@ -1,7 +1,7 @@
 <h1>{{ title }}</h1>
 <p>child works!</p>
 
-<ul *ngFor="let product of listProduct">
+<ul *ngFor="let product of product">
   <li>
     <h3>
       <p>
@@ -9,7 +9,7 @@
         {{ product.price }} Qty: {{ product.qty }}
       </p>
     </h3>
-    <button type="button" (click)="decre(product.id)">-</button>
-    <button type="button" (click)="incre(product.id)">+</button>
+    <button type="button" (click)="decrement(product.id)">-</button>
+    <button type="button" (click)="increment(product.id)">+</button>
   </li>
 </ul>

@@ -4,14 +4,14 @@ import { ChildComponent } from '../child/child.component';
 @Component({
   selector: 'app-parent',
   standalone: true,
-  imports: [ChildComponent],
+  imports: [], // Tanpa mengimport ChildComponent saat menggunakan class private
   templateUrl: './parent.component.html',
   styleUrl: './parent.component.css',
 })
 export class ParentComponent {
   title = 'Parent Component';
 
-  listProduct = [
+  private listProduct = [
     { id: 1, name: 'Apel', price: 5000, qty: 6 },
     { id: 2, name: 'Melon', price: 6000, qty: 11 },
     { id: 3, name: 'Anggur', price: 9000, qty: 10 },
