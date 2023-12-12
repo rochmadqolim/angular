@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { KalkulatorComponent } from './components/kalkulator/kalkulator.component';
@@ -16,7 +16,7 @@ import { ChildComponent } from './components/child/child.component';
     HomeComponent,
     CommonModule,
     ChildComponent,
-    RouterOutlet,
+    RouterModule,
     ParentComponent,
   ],
   templateUrl: './app.component.html', // view

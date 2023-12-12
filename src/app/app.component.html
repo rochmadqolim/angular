@@ -1,9 +1,33 @@
-<h1>{{ title }}</h1>
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Angular 17</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="child" class="nav-link">Child</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="counter" class="nav-link">Counter</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="kalkulator" class="nav-link">Kalkulator</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="parent" class="nav-link">Parent</a>
+      </li>
+    </div>
+  </nav>
 
-<app-home></app-home>
-<app-counter></app-counter>
-<app-kalkulator></app-kalkulator>
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- <h1>{{ title }}</h1> -->
+
+<!-- <app-home></app-home> -->
+<!-- <app-counter></app-counter> -->
+<!-- <app-kalkulator></app-kalkulator> -->
 <!-- <app-parent></app-parent> -->
-<app-child></app-child>
+<!-- <app-child></app-child> -->
 
 <!-- <router-outlet></router-outlet> -->
